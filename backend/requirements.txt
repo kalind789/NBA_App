@@ -1,0 +1,4 @@
+fastapi==0.136.1
+uvicorn==0.37.0
+pandas==2.2.3
+nba_api==1.11.4

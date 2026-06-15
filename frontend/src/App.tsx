@@ -5,7 +5,7 @@ import OutlierGamesTable, { type OutlierGame } from "@/components/OutlierGamesTa
 
 type Tab = "stats" | "factors" | "outliers"
 
-const API = "http://localhost:8000"
+const API = import.meta.env.VITE_API_URL ?? "http://localhost:8000"
 
 function useFetch<T>(url: string) {
   const [data, setData] = useState<T | null>(null)
